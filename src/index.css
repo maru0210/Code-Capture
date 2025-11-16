@@ -11,4 +11,24 @@ html {
 
 @theme {
   --font-code: "Google Sans Code", monospace;
+
+  --animate-notice-progress: notice-progress 2.7s linear both;
+  @keyframes notice-progress {
+    0% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+
+  --animate-notice-fadeout: notice-fadeout 0.3s linear both 2.7s;
+  @keyframes notice-fadeout {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 }
